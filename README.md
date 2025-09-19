@@ -9,4 +9,4 @@ You must have the [Allen and Heath MIDI Control](https://www.allen-heath.com/har
 Tested on SQ5, no other surfaces as of yet.
 
 ### Expansion of commands
-Will be expanding the range of avaliable commands soon.
+Will be expanding the range of available commands soon.
