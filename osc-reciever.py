@@ -66,7 +66,7 @@ def osc_handler(address, *args):
     except (IndexError, ValueError) as e:
         print("OSC handler error:", e)
 
-def main():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--ip", default="0.0.0.0")
     parser.add_argument("--port", type=int, default=8000)
@@ -95,6 +95,3 @@ def main():
     print(f"Listening for OSC on {args.ip}:{args.port}")
     print(f"Sending to SQ5 via MIDI port '{sq5_out.name}', MIDI channel {SQ_MIDI_CHANNEL}")
     server.serve_forever()
-
-if __name__ == "__main__":
-    main()
